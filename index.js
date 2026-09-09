@@ -44,6 +44,7 @@ async function main() {
         if (count > 0) {
             console.log(`${date.format("YYYY-MM-DD")} -> ${count} commits`);
             await makeCommit(date.format("YYYY-MM-DD"), count);
+            
         }
 
         date.add(1, "day");
